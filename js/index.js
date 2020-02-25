@@ -6,3 +6,33 @@ function ResponseiveHeader(id,htmlclass) {
     x.className = htmlclass;
   }
 }
+
+function ResizeOnScroll() {
+   console.log("Hello ");
+}
+
+function check_if_in_view() {
+       var window_height = $window.height();
+       var window_top_position = $window.scrollTop();
+       var window_bottom_position = (window_top_position + window_height);
+
+         var HeaderElement = document.getElementById('header');
+         var ImgLogoElement   = document.getElementById('imgLogo');
+         var TxtLogoElement   = document.getElementById('txtLogo');
+         /**************************************************************************/
+         if(window_top_position > 20 && HeaderElement.className == "header")
+         {
+             HeaderElement.className += " HeaderScrollStyle"
+             ImgLogoElement.className += " ImgShow";
+             TxtLogoElement.className = "txtLogo";
+             console.log("hello");
+        }else if(window_top_position < 20 && HeaderElement.className != "header")
+        {
+          HeaderElement.className = "header";
+          ImgLogoElement.className = "imgLogo";
+          TxtLogoElement.className += " TxtShow";
+          console.log("world");
+        }
+
+     /************************************************************************************/
+}
