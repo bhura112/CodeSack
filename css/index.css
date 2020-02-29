@@ -1,5 +1,6 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 /********************** Body Css ***********************************/
+
 html, body {
   height: 100%;
   width: 100%;
@@ -13,8 +14,297 @@ html, body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/****************************************************************************************/
+/**************************************************************************/
+
 .header {
+}
+
+.header-container {
+	display: flex;
+}
+
+/**********************************************/
+.header-logo{
+	display: flex;
+	padding: 10px;	
+}
+.header-logo .img-logo{
+	max-width: 40px;
+	max-height: 40px;
+}
+.header-logo .img-logo img{
+	max-width: 40px;
+	max-height: 40px;
+}
+
+.header-logo .txt-logo{
+	display: none;
+	background-color: #913000;
+}
+.header-logo .txt-logo a {
+	background-color: #999330;
+}
+.header-logo .txt-logo a span.logo {
+	background-color: #758962;
+}
+.header-logo .txt-logo a span.sublogo {
+	background-color: #F36965;
+}
+/**********************************************/
+@keyframes FadeInAnimation {
+   0% {
+    opacity: 0;
+	   margin-left: 100%;
+  }
+  
+  100% {
+    opacity: 1;
+	   margin-left: 0;
+  }
+}
+@-o-keyframes FadeInAnimation {
+   0% {
+    opacity: 0;
+	   margin-left: 100%;
+  }
+  
+  100% {
+    opacity: 1;
+	   margin-left: 0;
+  }
+}
+@-moz-keyframes FadeInAnimation {
+   0% {
+    opacity: 0;
+	   margin-left: 100%;
+  }
+  
+  100% {
+    opacity: 1;
+	   margin-left: 0;
+  }
+}
+@-webkit-keyframes FadeInAnimation {
+   0% {
+    opacity: 0;
+	   margin-left: 100%;
+  }
+  
+  100% {
+    opacity: 1;
+	   margin-left: 0;
+  }
+}
+/***********************************************/
+.header-menu{
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: column;
+}
+.header-menu .icon{
+	text-align: right;
+}
+.header-menu .icon i{
+    padding: 16px 14px;
+ 
+}
+.header-menu .menu{
+	display: none;
+}
+.header-menu .icon i:hover {
+	background-color: antiquewhite;
+}
+.header-menu:hover{
+	background-color: antiquewhite;
+}
+.header-menu:hover .menu{
+	-webkit-animation:easy-in FadeInAnimation .25s;
+    -moz-animation: FadeInAnimation .25s;
+    -o-animation: FadeInAnimation .25s;
+    animation: FadeInAnimation .25s;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	background-color: red;
+}
+
+
+.header-menu .menu ul{
+	display: flex;
+	text-align: right;
+	flex-direction: column;
+	flex-basis: 100%;
+	text-align: center;
+	list-style-type: none;
+}
+.header-menu .menu ul li{
+
+	display: flex;
+}
+.header-menu .menu ul li a{
+	color: #000;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-weight: bold;
+	width: 100%;
+	padding: 16px 14px;
+	text-decoration: none;
+	
+	
+}
+.header-menu .menu ul li a:hover{
+	color: #FFF;
+	background-color: #333;
+}
+/******************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/**
+#header{
+	width: 100%;
+	z-index: 999;
+	position: fixed;
+	
+}
+.header-after-scroll{
+	box-shadow: 1px 2px 3px black;
+	background-color: #FAFAFA;
+}
+#end-HeaderDiv{
+  width: 100%;
+  margin: 70px auto;
+  display: inline-block;
+}
+/***************************************************************************
+
+#nav-header {
+	display: flex;
+	flex-basis: 100%;
+	width: 100%;
+	margin: 0px auto;
+	
+}
+/**************************************************************************
+#nav-header div#nav-header-weblogo{
+	display: flex;
+	 flex-grow: 1;
+  text-align: center;
+	padding:10px 20px;
+}
+
+#nav-header div#nav-header-weblogo div#nav-header-weblogo-img {
+ display: block;
+     transition: all .125s ease-in-out;
+    -webkit-transition: all .125s ease-in-out;
+}
+#nav-header div#nav-header-weblogo div#nav-header-weblogo-txt {
+display:none;
+}
+#nav-header div#nav-header-weblogo div#nav-header-weblogo-txt a{
+text-decoration: none;
+font-weight: bold;
+color: #333;
+transition: all .125s ease-in-out;
+-webkit-transition: all .125s ease-in-out;
+}
+#nav-header div#nav-header-weblogo div#nav-header-weblogo-txt a span#logotxt1{
+	font-size:25px;
+	padding: 1px;
+}
+#nav-header div#nav-header-weblogo div#nav-header-weblogo-txt a span#logotxt2{
+	font-size: 15px;
+	padding: 1px;
+	
+}
+#nav-header div#nav-header-weblogo div#nav-header-weblogo-img img{
+    max-width: 30px;
+	max-height: 40px;
+	vertical-align:middle;
+}
+/*#########################################################################
+#nav-header div#nav-header-menu{
+	display: flex;
+	padding: 0px 20px;
+}
+
+#nav-header div#nav-header-menu div#menu-icon{
+	display: flex;	
+	padding: 20px 0px;
+}
+#nav-header div#nav-header-menu div#menu-icon i{
+	font-weight: 0;
+	font-size: 22px;
+}
+
+#nav-menu{
+	display: none;
+}
+div#nav-header-menu:hover .nav-menu{
+	background-color: red;
+	display: flex;
+	padding: 20px;
+	width: 100%;
+	margin: 50px auto;
+		
+}
+/***********************************************************************
+#ul-menu{
+	
+}
+#ul-menu li{
+	display: inline-block;
+	padding: 15px 20px;
+}
+
+#ul-menu a{
+	color: #000;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#ul-menu .sub-menu{
+	display: none;
+	border-width: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    width: 12em;
+    z-index: 3000;
+}
+#ul-menu li:hover .sub-menu
+{
+	display: block;
+	position: absolute;
+   background-color: #FAFAFA;
+	
+}
+#ul-menu li ul li:hover{
+	width: 100%;
+	background-color: bisque;
+}	
+/**********************************************************************
+@media only screen and (max-width: 64em) and (min-width: 52.01em) {
+
+}
+
+@media only screen and (min-width: 52em) {
+
+}
+
+/***************************************************************
+#pageContainer{
+	margin: 80px auto;
+}
+/****************************************************************/
+/*.header {
   margin: 0;
   position: fixed;
   width: 100%;
@@ -27,21 +317,23 @@ html, body {
   position: fixed;
   width: 100%;
   z-index: 1;
-}
+}*/
 /*********************************************************************************/
+/*
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+*/
 /*************************************************************************************/
-.header-logo {
+/*.header-logo {
   width: 30%;
   text-align: center;
   padding: 14px 16px;
-}
+}*/
 /***************************************Fade in *************************************************/
-@keyframes FadeInAnimation {
+/*@keyframes FadeInAnimation {
   0% {
     opacity: 0;
   }
@@ -72,9 +364,9 @@ html, body {
   100% {
     opacity: 1;
   }
-}
+}*/
 /*******************************************************************************************/
-.imgLogo {
+/*.imgLogo {
   display: none;
 }
 .imgLogo img {
@@ -87,9 +379,9 @@ html, body {
   -moz-animation: FadeInAnimation 2s;
   -o-animation: FadeInAnimation 2s;
   animation: FadeInAnimation 2s;
-}
+}*/
 /*********************************************************************************************/
-.txtLogo {
+/*.txtLogo {
   display: none;
 }
 .TxtShow {
@@ -114,9 +406,9 @@ html, body {
   text-shadow: 0px 1px 5px #666;
   font-size: 18px;
   font-weight: bold;
-}
+}*/
 /**************************************************************************************************/
-.header-menu {
+/*.header-menu {
   width: 70%;
   text-align: center;
   padding: 16px 16px;
@@ -129,13 +421,11 @@ html, body {
   font-size: 15px;
   font-weight: bold;
 }
-ul {
-  display: inline;
+#header-menu ul {
   margin: 0;
-  padding: 15px 0px 0px 0px;
+  padding: 0;
 }
-ul li {
-  display: inline-block;
+#header-menu ul li {
 }
 ul li:hover {
   background-color: #FAFAFA;
@@ -165,15 +455,15 @@ ul li ul li:hover {
 }
 .header-menu a.menu-icon {
   display: none;
-}
+}*/
 /******************************************************************************** Page *********************************************************/
-.page-container {
+/*.page-container {
   width: 100%;
   margin: 70px auto;
   display: inline-block;
-}
+}*/
 /**********************************************************************************************************************/
-.pc-row {
+/*.pc-row {
   width: 80%;
   margin: 50px auto;
   display: flex;
@@ -208,10 +498,10 @@ ul li ul li:hover {
 .pc-col-md2 img {
   width: 600px;
   height: 600px;
-}
+}*/
 /******************************************************* Small screen devices ***************************************************/
-@media screen and (max-width: 600px) {
-  /****************************************************************************************/
+/*@media screen and (max-width: 600px) {
+	
   .header {
     margin: 0;
     position: fixed;
@@ -233,14 +523,14 @@ ul li ul li:hover {
   .header-menu {
     height: 60px;
   }
-  /*****************************************************************************/
+	
   .header-logo a.logoText1 {
     font-size: 15px;
   }
   .header-logo a.logoText2 {
     font-size: 10px;
   }
-  /*********************************************************************************/
+	
   ul {
     display: block;
     margin: auto;
@@ -295,7 +585,7 @@ ul li ul li:hover {
   }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .header-container.responsive {
     display: block;
   }
@@ -322,4 +612,4 @@ ul li ul li:hover {
     position: absolute;
     background-color: #ddd;
   }
-}
+}*/

@@ -21,15 +21,9 @@ function check_if_in_view() {
   var TxtLogoElement = document.getElementById('txtLogo');
   /**************************************************************************/
   if (window_top_position > 20 && HeaderElement.className == "header") {
-    HeaderElement.className += " HeaderScrollStyle"
-    ImgLogoElement.className += " ImgShow";
-    TxtLogoElement.className = "txtLogo";
-    console.log("hello");
+    HeaderElement.className += " header-after-scroll";
   } else if (window_top_position < 20 && HeaderElement.className != "header") {
     HeaderElement.className = "header";
-    ImgLogoElement.className = "imgLogo";
-    TxtLogoElement.className += " TxtShow";
-    console.log("world");
   }
 
   /************************************************************************************/

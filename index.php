@@ -18,8 +18,84 @@
 <title> <?php echo "TEST ME"; ?> </title>
 </head>
 <body>
-<!--********************************************** web page header*********************************************************************************-->
-<div class="header" id="header">
+	<div class="header" >
+	    <div class="header-container">
+			<!-- ************************************************************************************* -->
+		    <div class="header-logo">
+			<div class="img-logo"><a href="#"> <img src="icons/logo.ico"/></a></div>
+				<div class="txt-logo"><a href="#"> <span class="logo">Code</span> <span class="sublogo">Sack</span></a></div>
+			</div>
+			<!-- ************************************************************************************* -->
+
+			<div class="header-menu">
+			<div class="icon"> <i class="fa fa-bars"></i></div>
+			<!-- ************************************************************************************* -->
+			<div class="menu">
+			 <ul>
+			   <li> <a href="#">Menu 1</a></li>
+			   <li> <a href="#">Menu 2</a></li>
+			   <li> <a href="#">Menu 3</a></li>
+		     </ul>
+			</div>
+			
+			<!-- ************************************************************************************* -->
+			</div>			
+		</div>
+	</div>
+	
+	<!-- ***********************************************************************************************  -->
+    <br/>
+	<!-- ***********************************************************************************************  -->
+	
+	<div id="pageContainer" class="pageContainer">
+	
+	
+	</div>
+
+	
+<!--********************************************** web page header*********************************************************************************
+	
+<p><strong>Hi there! Welcome to this Wikibook on the wonderful world of Bourne Shell Scripting!
+	  
+	  This book will cover the practical aspects of using and interacting with the Bourne Shell, the root of all shells in use in the Unix world. That includes interacting with the shell on a day-to-day basis for the purposes of operating the computer in normal tasks, as well as grouping together commands in files (scripts) which can be run over and over again. Since it's not practical to talk about the Bourne Shell in complete isolation, this will also mean some short jaunts into the wondrous world of Unix; not far, just enough to understand what is going on and be able to make full use of the shell's very wide capabilities.
+	  
+	  There are also some things this book won't do for you. This book is not an in-depth tutorial on any kind of programming theory -- you won't learn the finer points of program construction and derivation or the mathematical backings of program development here. This book also won't teach you about Linux or any other type of Unix or Unix itself or any other operating system any more than is necessary to teach you how to use the shell. Nothing to be found here about Apache, joe, vi, or any other specific program. Nor will we cover firewalls and networking.
+	  
+	  We will cover the Bourne Shell, beginning with the basic functionality and capabilities as they existed in the initial release, through to the added functionality specified by the international POSIX standard POSIX 1003.1 for this shell. We will have to give you some programming knowledge, but we hope that everyone will readily understand the few simple concepts we explain.
+	  
+	  Having said that, the authors hope you will find this book a valuable resource for learning to use the shell and for using the shell on a regular basis. And that you might even have some fun along the way.</strong></p>
+<h2>Hi there! Welcome to this Wikibook on the wonderful world of Bourne Shell Scripting!
+  
+  This book will cover the practical aspects of using and interacting with the Bourne Shell, the root of all shells in use in the Unix world. That includes interacting with the shell on a day-to-day basis for the purposes of operating the computer in normal tasks, as well as grouping together commands in files (scripts) which can be run over and over again. Since it's not practical to talk about the Bourne Shell in complete isolation, this will also mean some short jaunts into the wondrous world of Unix; not far, just enough to understand what is going on and be able to make full use of the shell's very wide capabilities.
+  
+  There are also some things this book won't do for you. This book is not an in-depth tutorial on any kind of programming theory -- you won't learn the finer points of program construction and derivation or the mathematical backings of program development here. This book also won't teach you about Linux or any other type of Unix or Unix itself or any other operating system any more than is necessary to teach you how to use the shell. Nothing to be found here about Apache, joe, vi, or any other specific program. Nor will we cover firewalls and networking.
+  
+  We will cover the Bourne Shell, beginning with the basic functionality and capabilities as they existed in the initial release, through to the added functionality specified by the international POSIX standard POSIX 1003.1 for this shell. We will have to give you some programming knowledge, but we hope that everyone will readily understand the few simple concepts we explain.
+  
+Having said that, the authors hope you will find this book a valuable resource for learning to use the shell and for using the shell on a regular basis. And that you might even have some fun along the way.</h2>
+	
+	
+	<h2>Hi there! Welcome to this Wikibook on the wonderful world of Bourne Shell Scripting!
+
+This book will cover the practical aspects of using and interacting with the Bourne Shell, the root of all shells in use in the Unix world. That includes interacting with the shell on a day-to-day basis for the purposes of operating the computer in normal tasks, as well as grouping together commands in files (scripts) which can be run over and over again. Since it's not practical to talk about the Bourne Shell in complete isolation, this will also mean some short jaunts into the wondrous world of Unix; not far, just enough to understand what is going on and be able to make full use of the shell's very wide capabilities.
+
+There are also some things this book won't do for you. This book is not an in-depth tutorial on any kind of programming theory -- you won't learn the finer points of program construction and derivation or the mathematical backings of program development here. This book also won't teach you about Linux or any other type of Unix or Unix itself or any other operating system any more than is necessary to teach you how to use the shell. Nothing to be found here about Apache, joe, vi, or any other specific program. Nor will we cover firewalls and networking.
+
+We will cover the Bourne Shell, beginning with the basic functionality and capabilities as they existed in the initial release, through to the added functionality specified by the international POSIX standard POSIX 1003.1 for this shell. We will have to give you some programming knowledge, but we hope that everyone will readily understand the few simple concepts we explain.
+
+Having said that, the authors hope you will find this book a valuable resource for learning to use the shell and for using the shell on a regular basis. And that you might even have some fun along the way.</h2>
+	
+	
+		<h2>Hi there! Welcome to this Wikibook on the wonderful world of Bourne Shell Scripting!
+
+This book will cover the practical aspects of using and interacting with the Bourne Shell, the root of all shells in use in the Unix world. That includes interacting with the shell on a day-to-day basis for the purposes of operating the computer in normal tasks, as well as grouping together commands in files (scripts) which can be run over and over again. Since it's not practical to talk about the Bourne Shell in complete isolation, this will also mean some short jaunts into the wondrous world of Unix; not far, just enough to understand what is going on and be able to make full use of the shell's very wide capabilities.
+
+There are also some things this book won't do for you. This book is not an in-depth tutorial on any kind of programming theory -- you won't learn the finer points of program construction and derivation or the mathematical backings of program development here. This book also won't teach you about Linux or any other type of Unix or Unix itself or any other operating system any more than is necessary to teach you how to use the shell. Nothing to be found here about Apache, joe, vi, or any other specific program. Nor will we cover firewalls and networking.
+
+We will cover the Bourne Shell, beginning with the basic functionality and capabilities as they existed in the initial release, through to the added functionality specified by the international POSIX standard POSIX 1003.1 for this shell. We will have to give you some programming knowledge, but we hope that everyone will readily understand the few simple concepts we explain.
+
+Having said that, the authors hope you will find this book a valuable resource for learning to use the shell and for using the shell on a regular basis. And that you might even have some fun along the way.</h2>
+<!--<div class="header" id="header">
   <div class="header-container" id="header-container">
     <div class="header-logo"  id="header-logo">
       <div class="imgLogo" id="imgLogo"> <a href=""><img src="icons/logo.png" /></a></div>
@@ -57,8 +133,9 @@
   </div>
 </div>
 </div>
+-->
 <!--****************************************************header Close**********************************************************************************-->
-
+<!--
 <div class="page-container" >
   <div class="pc-row ">
     <div class="pc-col-md1 ">
@@ -73,9 +150,7 @@
     </div>
     <div class="pc-col-md2"> <img src="icons/abc11.png"/> </div>
   </div>
-  <h2>heloow</h2>
-  <h2>heloow</h2>
-</div>
+</div>-->
 <!--********************************************************************************************************************-->
 
 </body>
