@@ -4,6 +4,8 @@
 html, body {
   height: 100%;
   width: 100%;
+	  margin: 0;
+  padding: 0;
   font-family: "euclid_circular_a", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 * {
@@ -17,15 +19,20 @@ html, body {
 /**************************************************************************/
 
 .header {
+	position: fixed;
+	widows: 100%;	
 }
 
 .header-container {
-	display: flex;
+	
+ display: flex;
+ widows: 100%;	
 }
 
 /**********************************************/
 .header-logo{
 	display: flex;
+	flex-basis: 100%;
 	padding: 10px;	
 }
 .header-logo .img-logo{
@@ -51,21 +58,22 @@ html, body {
 	background-color: #F36965;
 }
 /**********************************************/
+
 @keyframes FadeInAnimation {
    0% {
     opacity: 0;
-	   margin-left: 100%;
+    //margin-left: 100%;
   }
   
   100% {
     opacity: 1;
-	   margin-left: 0;
+	 //  margin-left: 0;
   }
 }
 @-o-keyframes FadeInAnimation {
    0% {
     opacity: 0;
-	   margin-left: 100%;
+	 //  margin-left: 100%;
   }
   
   100% {
@@ -76,27 +84,28 @@ html, body {
 @-moz-keyframes FadeInAnimation {
    0% {
     opacity: 0;
-	   margin-left: 100%;
+	 //  margin-left: 100%;
   }
   
   100% {
     opacity: 1;
-	   margin-left: 0;
+	 //  margin-left: 0;
   }
 }
 @-webkit-keyframes FadeInAnimation {
    0% {
     opacity: 0;
-	   margin-left: 100%;
+	 //  margin-left: 100%;
   }
   
   100% {
     opacity: 1;
-	   margin-left: 0;
+	  // margin-left: 0;
   }
 }
 /***********************************************/
 .header-menu{
+	
 	display: flex;
 	flex-basis: 100%;
 	flex-direction: column;
@@ -106,7 +115,6 @@ html, body {
 }
 .header-menu .icon i{
     padding: 16px 14px;
- 
 }
 .header-menu .menu{
 	display: none;
@@ -115,7 +123,7 @@ html, body {
 	background-color: antiquewhite;
 }
 .header-menu:hover{
-	background-color: antiquewhite;
+	background-color:antiquewhite;
 }
 .header-menu:hover .menu{
 	-webkit-animation:easy-in FadeInAnimation .25s;
@@ -138,8 +146,7 @@ html, body {
 	list-style-type: none;
 }
 .header-menu .menu ul li{
-
-	display: flex;
+    display: flex;
 }
 .header-menu .menu ul li a{
 	color: #000;
@@ -148,19 +155,90 @@ html, body {
 	width: 100%;
 	padding: 16px 14px;
 	text-decoration: none;
-	
-	
+		
 }
 .header-menu .menu ul li a:hover{
 	color: #FFF;
 	background-color: #333;
 }
+.header-end{
+  width: 100%;
+  margin: 30px auto;
+  display: inline-block;
+}
 /******************************************************************************/
+.pageContainer{
+	width: 100%;
+	background-color: gray;
+}
 
+.pageContainer .pc-row{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color:wheat;
+	padding: 20px;
+}
+.pageContainer .pc-row .pc-col-md1{
+	width: 100%;
+	background-color: gray;
+}
 
+.pageContainer .pc-row .pc-col-md2{
+	width: 100%;
+	background-color: #639856;
+	display: none;
+}
+/***************************************************************************/
+@media only screen and (max-width: 64em) and (min-width: 52.01em) {
+.header-menu .menu{
+		display: block;
+	   
+	}
+}
 
+@media only screen and (min-width: 52em) {
+	.header{
+		
+	}
+	.header-logo{
+		min-width: 300px;
+		justify-content: center;
+		align-items: center;
+	}
+	.header-menu{
+		padding: 10px 5px;
+		background-color: transparent;
+	}
+	.header-menu:hover{
+	background-color:transparent;
+}
+	.header-menu .menu{
+		display: block;
+	}
+	.header-menu .menu ul {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.header-menu .icon i{
+		display: none;
+	}
+	.header-menu:hover .menu{
+	-webkit-animation:easy-in FadeInAnimation 1s;
+    -moz-animation: FadeInAnimation 1s;
+    -o-animation: FadeInAnimation 1s;
+    animation: FadeInAnimation 1s;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	background-color: transparent;
+}
+}
 
-
+/********************************************************************************************/
 
 
 
