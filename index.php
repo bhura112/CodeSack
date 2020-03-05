@@ -29,7 +29,7 @@
 	  </div>
     </div>
     <nav class="header-menu"> 
-		<i onMouseOver="AddResponseiveClass('menu-ul','menu-ul')" class="menu-icon fa fa-bars"></i>
+		<i onclick="AddResponseiveClass('menu-ul','menu-ul')" class="menu-icon fa fa-bars"></i>
       <ul class="menu-ul" id="menu-ul">
         <li><a href="mcu/"> CONTROLLERS</a></li>
         <li><a href="rtos/"> RTOS</a></li>
@@ -41,9 +41,66 @@
 </header>
 <div class="header-end"> </div>
 <!-- ************************************************-->
-<div class="page-conatiner">
+<div class="main-conatiner">
+	<!--*********************************************************************************************-->
+	<div class="main-row">
+	<div class="col1"> <img src="icons/autohome.gif"/></div>
+	<div class="col2"> 
+		<h3>Embedded System</h3>
+		<p> An embedded system is a combination of computer hardware and software, either fixed in capability or programmable, designed for a specific function or functions within a larger system. </p>
+		</div>
 	
-  <div class="page-intro-card">
+	</div>
+	
+	<div class="main-row">
+	<div class="col1"> <img src="icons/rtos.gif"/></div>
+	<div class="col2"> 
+		<h3>Real Time Operating System</h3>
+		<p> A real-time operating system (RTOS) is an operating system (OS) intended to serve real-time applications that process data as it comes in, typically without buffer delays. Processing time requirements (including any OS delay) are measured in tenths of seconds or shorter increments of time. </p>
+		</div>
+	
+	</div>
+	
+	<div class="main-row">
+	<div class="col1"> <img src="icons/iotcover.gif"/></div>
+	<div class="col2"> 
+		<h3>Internet Of Things</h3>
+		<p> The Internet of things (IoT) is a system of interrelated computing devices, mechanical and digital machines are provided with unique identifiers (UIDs) and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction. </p>
+		</div>
+	
+	</div>
+	
+	<div class="main-row">
+	<div class="col1 web-page-end"> <img  style="margin: 10px 0px 0px 0px;  width: 80px ; height: 80px;" src="icons/logo.ico"/></div>
+	<div class="col2 web-page-end"> 
+		<h3>Code Sack <br>Learn Fast, Build Fast</h3>
+		<p>Subscribe our newsletter for new code examples, tutorials 
+		and portable libraries update.</p>
+		</div>
+	    <form class="example" action="/action_page.php">
+		  <input type="text" placeholder="Enter email address" name="search">
+		  <i class="fa fa-envelope" aria-hidden="true"></i>
+		  <button type="submit">Subscribe</button>
+		</form>
+	</div>
+	<!--*********************************************************************************************-->
+	<!--<div class="main-row-1">
+		<div class="col1">
+			<h2>Code Sack <br/>Learn Fast, Build Fast !</h2>
+			<p>Serach here for code examples, tutorials 
+		and portable libraries for different periperials <br/>like UART, I2C, USB ,Graphical Interface and etc.
+		Learn how to bulid your first to high level<br/> RTOS and LINUX applications.</p>
+			 <h3>Get the latest tutorials and update</h3>
+		  <form class="example" action="/action_page.php">
+		  <input type="text" placeholder="Enter email address" name="search">
+		  <i class="fa fa-envelope" aria-hidden="true"></i>
+		  <button type="submit">Subscribe</button>
+		</form>
+		</div>
+	
+	   
+	</div>-->
+  <!--<div class="page-intro-card">
     <div class="card-row-1">
       <div class="card-col-1"> 
 		<div class="card-header">
@@ -79,7 +136,7 @@
 		  </div>
 		  </div>
     </div>
-  </div>
+  </div>-->
 </div>
 </body>
 </html>
